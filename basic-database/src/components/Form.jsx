@@ -7,7 +7,8 @@ const Form = ({formData,setFormData,formArray,setFormArray}) => {
     }
 
     const handleClick= ()=>{
-        setFormArray((prevList)=>([...prevList, formData]))
+        const newFormData= {...formData, id:Date.now()}
+        setFormArray((prevList)=>([...prevList, newFormData]))
     }
   return (
     <>
