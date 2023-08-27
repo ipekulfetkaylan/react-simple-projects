@@ -22,13 +22,18 @@ function App() {
     };
     fetchTours();
   }, []);
-  console.log(tours);
+  // const removeItem = (id)=>{
+  //  const updateTous= tours.filter((item)=>item.id !== id);
+  //  setTours(updateTous)
+
+  // }
 
   return (
     <div className="App">
       <h3 className="tours-title">Our Tours</h3>
       <div className="container">
-        {loading ? <Loding /> : <Tours tours={tours} />}
+        {loading ? <Loding /> : <Tours tours={tours} setTours={setTours}  />}
+        
       </div>
     </div>
   );

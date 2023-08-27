@@ -72,3 +72,12 @@ body{
   color:#4477CE;
   cursor: pointer;
 }
+.btn-delete{
+  text-align: center;
+  color: #fff;
+  padding: 8px 12px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(187, 37, 37,0.7);
+  display: flex;
+}
