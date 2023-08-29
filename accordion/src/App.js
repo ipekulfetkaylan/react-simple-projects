@@ -2,7 +2,6 @@ import Question from "./Question";
 import data from "./data";
 
 function App() {
-  const { title, info } = data;
   return (
     <div className="App">
       <div className="question-container">
