@@ -1,0 +1,82 @@
+.App{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+.testimonials-container{
+  width: 500px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.img-background{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color:steelblue;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+.img-background img{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.testi-icon{
+  position: absolute;
+  background-color: steelblue;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.testi-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.testi-name{
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 0;
+}
+.testi-title{
+  text-transform: uppercase;
+  font-weight: 500;
+  color: steelblue;
+}
+.testi-text{
+  text-align: center;
+}
+.testi-arrow2{
+  margin-left: 20px;
+}
+button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: steelblue;
+  font-size: 20px;
+  cursor: pointer;
+}
