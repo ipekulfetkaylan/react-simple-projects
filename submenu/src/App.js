@@ -1,11 +1,19 @@
+import Hero from "./Hero";
+import MobilMenu from "./MobilMenu";
+import Navbar from "./Navbar";
+import Submenu from "./Submenu";
 
 
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <Navbar/>
+      <MobilMenu/>
+      <Hero/>
+      <Submenu/>
+
+    </>
   );
 }
 
