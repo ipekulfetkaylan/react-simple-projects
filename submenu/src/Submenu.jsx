@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useGlobalContext } from "./context";
-import sublinks from "./data";
+
 
 const Submenu = () => {
   const {
@@ -8,13 +8,22 @@ const Submenu = () => {
     location,
     page: { page, links },
   } = useGlobalContext();
-  const container = useRef();
+  const container = useRef(null);
+  const [colunms, setColumns]= useState('col-2');
+
   useEffect(() => {
+    setColumns('col-2');
     const submenu = container.current;
     const { center, bottom } = location;
     submenu.style.left = `${center}px`;
     submenu.style.top = `${bottom}px`;
-  }, [location]);
+    if(links.length === 3){
+        setColumns('col-3')
+    }
+    if(links.length > 3){
+        setColumns('col-4');
+    }
+  }, [location,links]);
 
   return (
     <aside
@@ -22,7 +31,7 @@ const Submenu = () => {
       ref={container}
     >
       <h4>{page}</h4>
-      <div className={`submenu-center col-2`}>
+      <div className={`submenu-center ${colunms}`}>
         {links.map((link, i) => {
           const { label, icon, url } = link;
           return (
