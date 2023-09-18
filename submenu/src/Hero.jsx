@@ -5,7 +5,7 @@ const Hero = () => {
   const { closeSubMenu } = useGlobalContext();
 
   return (
-    <section className="hero">
+    <section className="hero" onMouseOver={closeSubMenu}>
       <div className="hero-center">
         <article className="hero-info">
           <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
@@ -17,7 +17,7 @@ const Hero = () => {
           <button className="btn">Lorem</button>
         </article>
         <article className="hero-images">
-          <img src="" className="phone-img" alt="" />
+         
         </article>
       </div>
     </section>

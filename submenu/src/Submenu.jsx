@@ -16,7 +16,7 @@ const Submenu = () => {
     const submenu = container.current;
     const { center, bottom } = location;
     submenu.style.left = `${center}px`;
-    submenu.style.top = `${bottom}px`;
+    submenu.style.top = `${bottom + 20}px`;
     if(links.length === 3){
         setColumns('col-3')
     }
@@ -35,7 +35,7 @@ const Submenu = () => {
         {links.map((link, i) => {
           const { label, icon, url } = link;
           return (
-            <a href={url}>
+            <a href={url} key={i}>
               {icon}
               {label}
             </a>
