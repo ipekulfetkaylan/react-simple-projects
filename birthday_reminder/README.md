@@ -5,6 +5,5 @@
  useState 
 
 ### Öğrendiklerimiz:
-useState kullanımı
-props mantığı
+useState kullanımı, props mantığı
 
