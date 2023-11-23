@@ -35,7 +35,7 @@ const hexColorValue=rgbToHex(...color.rgb);
     >
       <p className='percent-value'>{color.weight}%</p>
       <p className='color-value'>{hexColorValue}</p>
-       {alert && <p className='alert'> <BsCheck className='icon-check'/>  copied to clipboard</p>}
+       {alert && <p className='alert'> <BsCheck className='icon-check'/> {hexColorValue} copied to clipboard</p>}
     <BiCopy className='icon' 
     onClick={handleClick} 
     />

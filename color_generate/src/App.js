@@ -10,7 +10,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     try {
-      const newColor = new Values(color).all(10);
+      const newColor = new Values(color).all();
       setColorList(newColor);
       setError(false);
     } catch (error) {
